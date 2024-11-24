@@ -1,0 +1,159 @@
+.branches {
+    padding: 50px 0;
+}
+
+.branches-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 45px;
+}
+
+.branches-header h1 {
+    margin: 0;
+}
+
+.branches-header p {
+    font-weight: 500;
+    font-size: 1.5em;
+    text-align: center;
+    color: #aaabad;
+}
+
+.branches-img-swiper {
+    display: flex;
+    position: relative;
+}
+
+.branches-img-swiper .swiper {
+    width: 80%;
+    padding-bottom: 20px;
+}
+
+.branches .swiper-slide {
+    width: 50% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.branches .swiper-slide img {
+    height: 100%;
+    width: 100%;
+}
+
+.branch-swiper-prev,
+.branch-swiper-next {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .2s;
+    user-select: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.branch-swiper-prev:hover,
+.branch-swiper-next:hover {
+    background: var(--secondary-color);
+}
+
+.branch-swiper-prev {
+    left: 10px;
+}
+
+.branch-swiper-next {
+    right: 10px;
+}
+
+.branch-location {
+    position: absolute;
+    bottom: -25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.branch-location h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    font-size: 1.5em;
+    color: #1f2b51;
+}
+
+.branch-location-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background: rgba(232, 232, 232, 0.4);
+    border-radius: 10px;
+    padding: 8px 14px;
+}
+
+
+@media (max-width: 1000px) {
+
+    .branches-header p,
+    .branch-location h1 {
+        font-size: 1em;
+    }
+
+    .branch-location svg {
+        height: 20px;
+        width: 20px;
+    }
+}
+
+@media (max-width: 730px) {
+    .branch-location {
+        flex-direction: column;
+        gap: 0;
+        bottom: -50px;
+    }
+}
+
+
+@media (max-width: 640px) {
+    .branches .swiper-slide {
+        width: 90% !important;
+    }
+
+    .branches-header p br {
+        display: none;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .branches-header p {
+        font-size: .9em;
+    }
+
+    .branch-swiper-next,
+    .branch-swiper-prev {
+        display: none;
+    }
+
+    .branches .swiper-slide {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .branches-header p {
+        font-size: .8em;
+    }
+}

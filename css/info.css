@@ -1,0 +1,161 @@
+.info {
+    padding: 40px 0;
+    position: relative;
+    background-color: #f9f9f9;
+    overflow: hidden;
+}
+
+.info-card {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.info img {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
+.info-card-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.info-card-item {
+    background-color: var(--primary-color);
+    padding: 22px 25px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.info-card-item-svg {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: #fff;
+}
+
+.info-card-item-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2px;
+}
+
+.info-card-item-txt h2 {
+    font-weight: 900;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.info-card-item-txt h1 {
+    font-weight: 500;
+    font-size: 1.4em;
+    color: #fff;
+}
+
+
+@media (max-width: 1330px) {
+    .info-card-box {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 1240px) {
+    .info {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 1135px) {
+    .info {
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 1005px) {
+    .info {
+        font-size: 16px;
+    }
+
+    .info-card-box {
+        gap: 25px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .info-card-item,
+    .info-card-item-txt {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .info-card-item,
+    .info-card-item-txt {
+        align-items: start;
+        text-align: start;
+    }
+}
+
+@media (max-width: 650px) {
+    .info-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 570px) {
+    .info {
+        font-size: 14px;
+    }
+
+    .info-card-box {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 520px) {
+    .info {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 490px) {
+    .info {
+        font-size: 16px;
+    }
+
+    .info-card-box {
+        grid-template-columns: 1fr;
+    }
+
+    .info-card-item,
+    .info-card-item-txt {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width:360px) {
+
+    .info-card-item,
+    .info-card-item-txt {
+        align-items: start;
+        text-align: start;
+    }
+}

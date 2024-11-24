@@ -1,0 +1,217 @@
+.whyUs {
+    padding: 30px 0;
+}
+
+.whyUs-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.whyUs-top-left,
+.whyUs-top-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 90px;
+}
+
+.whyUs-txt-box {
+    width: 294px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 5px;
+    position: relative;
+    background: #fff;
+    border-radius: 100%;
+    background: linear-gradient(white, white) padding-box,
+        linear-gradient(to bottom, #dc2822, #d57a18) border-box;
+    border-radius: 10px;
+    border: 5px solid transparent;
+}
+
+.whyUs-txt-box h1 {
+    font-weight: 900;
+    font-size: 1.5em;
+    color: #000;
+}
+
+.whyUs-txt-box p {
+    font-weight: 600;
+    font-size: .78em;
+    color: #000;
+}
+
+.whyUs-txt-box:first-child p span {
+    color: #dc2a23;
+}
+
+
+.gradient-circle {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    right: 10px;
+    border-radius: 100%;
+    background: linear-gradient(138deg, #dc2822 0%, #d57a18 100%);
+}
+
+
+/* ----------------------------------- */
+.whyUs-top-left .whyUs-txt-box:nth-child(2) {
+    background: linear-gradient(white, white) padding-box,
+        linear-gradient(to bottom, #eccd1e, #38a30d) border-box;
+}
+
+.whyUs-top-left .whyUs-txt-box:nth-child(2) .gradient-circle {
+    background: linear-gradient(163deg, #eccd1e 0%, #38a30d 100%);
+}
+
+.whyUs-top-left .whyUs-txt-box:nth-child(2) p span {
+    color: #b7c119;
+}
+
+
+/* ----------------------------------- */
+
+.whyUs-top-right .whyUs-txt-box:first-child {
+    background: linear-gradient(white, white) padding-box,
+        linear-gradient(to bottom, #a602dd, #dd026c) border-box;
+}
+
+
+.whyUs-top-right .whyUs-txt-box:first-child .gradient-circle {
+    background: linear-gradient(163deg, #a602dd 0%, #dd026c 100%);
+}
+
+.whyUs-top-right .whyUs-txt-box:first-child p span {
+    color: #be11bc;
+}
+
+
+/* ----------------------------------- */
+.whyUs-top-right .whyUs-txt-box:last-child {
+    background: linear-gradient(white, white) padding-box,
+        linear-gradient(to bottom, #1028ff, #a602dd) border-box;
+}
+
+
+.whyUs-top-right .whyUs-txt-box:last-child .gradient-circle {
+    background: linear-gradient(163deg, #1028ff 0%, #a602dd 100%);
+}
+
+.whyUs-top-right .whyUs-txt-box:last-child p span {
+    color: #6c11ea;
+}
+
+
+.whyUs-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 35px;
+}
+
+
+/* ----------------------------------- */
+.whyUs-bottom .whyUs-txt-box:first-child {
+    background: linear-gradient(white, white) padding-box,
+        linear-gradient(to bottom, #2db62d, #0d9bbf) border-box;
+}
+
+
+.whyUs-bottom .whyUs-txt-box:first-child .gradient-circle {
+    background: linear-gradient(163deg, #2db62d 0%, #0d9bbf 100%);
+}
+
+.whyUs-bottom .whyUs-txt-box:first-child p span {
+    color: #1ea972;
+}
+
+/* ----------------------------------- */
+
+.whyUs-bottom .whyUs-txt-box:last-child {
+    background: linear-gradient(white, white) padding-box,
+        linear-gradient(to bottom, #1acbe2, #003acd) border-box;
+}
+
+
+.whyUs-bottom .whyUs-txt-box:last-child .gradient-circle {
+    background: linear-gradient(163deg, #1acbe2 0%, #003acd 100%);
+}
+
+.whyUs-bottom .whyUs-txt-box:last-child p span {
+    color: #0f8ad9;
+}
+
+@media (max-width: 1275px) {
+    .whyUs-top img {
+        display: none;
+    }
+
+    .whyUs-top {
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+
+    .whyUs-top-left,
+    .whyUs-top-right {
+        gap: 30px;
+    }
+
+    .whyUs-bottom {
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+}
+
+
+@media (max-width: 680px) {
+    .whyUs-txt-box {
+        width: auto;
+    }
+
+    .whyUs-top,
+    .whyUs-bottom {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .whyUs-top-left,
+    .whyUs-top-right {
+        gap: 15px;
+    }
+
+    .whyUs-bottom {
+        margin-top: 15px;
+    }
+
+    .whyUs-top br,
+    .whyUs-bottom br {
+        display: none;
+    }
+
+    .whyUs-txt-box {
+        border: 2px solid transparent;
+        height: 120px;
+        padding: 20px 30px;
+    }
+
+    .gradient-circle {
+        height: 10px;
+        width: 10px;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    .whyUs-txt-box {
+        height: auto;
+    }
+}

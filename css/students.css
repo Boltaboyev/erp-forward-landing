@@ -1,0 +1,151 @@
+.student {
+    padding: 30px 0;
+}
+
+
+.student-swiper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 190px;
+    gap: 60px;
+}
+
+
+.student-swiper .student-ielts img {
+    height: 400px;
+}
+
+.student-ielts-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 13px;
+}
+
+.student-ielts-text h2 {
+    font-weight: 900;
+    font-size: 2.25em;
+    color: #000;
+}
+
+.student-ielts-text h1:first-of-type {
+    font-weight: 900;
+    font-size: 2.8em;
+    color: var(--secondary-color);
+}
+
+.student-ielts-text h1:last-of-type {
+    font-weight: 900;
+    font-size: 3em;
+    color: var(--primary-color);
+}
+
+.student-ielts-text h1:last-of-type span:first-child {
+    color: var(--secondary-color);
+    margin-right: 10px;
+}
+
+.student-ielts-text h1:last-of-type span:last-child {
+    font-size: 36px;
+}
+
+.student-ielts-text p {
+    font-weight: 600;
+    font-size: 1em;
+    color: #aaabad;
+}
+
+
+@media (max-width: 1326px) {
+    .student-swiper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 140px;
+        gap: 60px;
+    }
+}
+
+@media (max-width: 1145px) {
+
+    .student-swiper {
+        font-size: 14px;
+    }
+
+    .student-swiper .student-ielts img {
+        height: 340px;
+    }
+}
+
+
+@media (max-width: 1010px) {
+    .student-swiper {
+        padding: 0 100px;
+    }
+}
+
+
+@media (max-width: 930px) {
+
+    .student-swiper {
+        font-size: 13px;
+    }
+
+    .student-ielts-text {
+        gap: 10px;
+    }
+
+    .student-swiper .student-ielts img {
+        height: 300px;
+    }
+
+    .student-ielts-text h1:last-of-type span:last-child {
+        font-size: 26px;
+    }
+}
+
+@media (max-width:870px) {
+    .student-swiper {
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .student-ielts-text p {
+        display: none;
+    }
+
+    .student-swiper>* {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .student-swiper {
+        font-size: 10px;
+    }
+
+    .student-swiper p {
+        font-size: 14px;
+    }
+
+    .student-ielts img {
+        height: 200px !important;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .student-swiper {
+        padding: 0;
+    }
+
+    .swiper_next,
+    .swiper_prev {
+        display: none;
+    }
+}

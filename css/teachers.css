@@ -1,0 +1,185 @@
+.teachers {
+    padding: 30px 0;
+    background: var(--primary-color);
+}
+
+
+.teachers .section-header {
+    color: #fff;
+}
+
+.teacher-swiper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 190px;
+    gap: 60px;
+}
+
+
+.teacher-swiper .teacher-img img {
+    height: 430px;
+}
+
+.teacher-swiper .teacher-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.teacher-text h2:first-of-type {
+    font-weight: 900;
+    font-size: 2.25em;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.teacher-text p:first-of-type {
+    font-weight: 900;
+    font-size: 1em;
+    color: #fff;
+}
+
+.teacher-text h2:nth-of-type(2) {
+    font-weight: 900;
+    font-size: 2em;
+    color: var(--secondary-color);
+}
+
+.teacher-experience,
+.teacher-students {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-weight: 900;
+    font-size: 1.7em;
+    color: #fff;
+}
+
+.teacher-experience h1:last-child,
+.teacher-students h1:last-child {
+    font-weight: 400;
+    font-size: 1em;
+    letter-spacing: 4px;
+}
+
+@media (max-width: 1326px) {
+    .teacher-swiper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 140px;
+        gap: 60px;
+    }
+}
+
+@media (max-width: 1145px) {
+
+    .teacher-swiper {
+        font-size: 14px;
+    }
+
+    .teacher-swiper .teacher-img img {
+        height: 340px;
+    }
+}
+
+
+@media (max-width: 1010px) {
+    .teacher-swiper {
+        padding: 0 100px;
+    }
+}
+
+
+@media (max-width: 930px) {
+
+    .teacher-swiper {
+        font-size: 13px;
+    }
+
+
+    .teacher-swiper .teacher-img img {
+        height: 300px;
+    }
+
+}
+
+@media (max-width:870px) {
+
+    .teacher-swiper {
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+
+    .teacher-swiper>* {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .teacher-swiper {
+        font-size: 10px;
+    }
+
+    .teacher-img img {
+        height: 200px !important;
+    }
+
+    .teacher-text {
+        align-items: center !important;
+    }
+
+    .teacher-text p {
+        display: none;
+    }
+
+    .teacher-text h2:first-of-type {
+        margin-bottom: 10px;
+    }
+
+    .teacher-statistic {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+        width: 100%;
+    }
+
+    .teacher-experience,
+    .teacher-students {
+        align-items: center;
+        gap: 5px;
+    }
+
+    .teacher-experience h1:last-child,
+    .teacher-students h1:last-child {
+        font-size: .7em;
+    }
+}
+
+@media (max-width: 440px) {
+    .teacher-statistic h1:last-child span {
+        display: none;
+    }
+
+    .teacher-text h2:first-child {
+        margin: 0;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .swiper_next,
+    .swiper_prev {
+        display: none;
+    }
+}
