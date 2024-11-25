@@ -1,0 +1,129 @@
+.fake-navbar {
+    height: 80px;
+    background: var(--primary-color);
+}
+
+
+.eng-foundation {
+    padding: 75px 0;
+}
+
+.eng-foundation .section-header {
+    font-weight: 700;
+    margin-bottom: 70px;
+}
+
+.eng-foundation-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+
+.eng-foundation-content-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 55px;
+    flex: 1;
+}
+
+.eng-foundation-content-txt h2 {
+    font-weight: 700;
+    font-size: 2.5em;
+    color: var(--primary-color);
+}
+
+.eng-foundation-info {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.eng-foundation-info p {
+    font-weight: 400;
+    font-size: 1.25em;
+    line-height: 150%;
+    color: #8a90a5;
+}
+
+.eng-foundation-info img {
+    margin-top: 4px;
+}
+
+.foundation-swiper {
+    flex: 1;
+    margin: 0 !important;
+}
+
+.foundation-swiper .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.foundation-swiper img {
+    height: 350px;
+}
+
+.foundation-swiper h1 {
+    font-weight: 700;
+    font-size: 2.2em;
+    color: var(--primary-color);
+}
+
+@media (max-width: 955px) {
+    .eng-foundation-content {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 895px) {
+    .eng-foundation-content {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .eng-foundation-content-txt {
+        gap: 30px;
+    }
+
+    .eng-foundation-content-txt h2 {
+        font-size: 2em;
+    }
+
+    .eng-foundation-info {
+        border-radius: 6px;
+        padding: 20px;
+        background: #f8fafc;
+    }
+}
+
+@media (max-width: 450px) {
+    .foundation-swiper img {
+        height: 300px;
+    }
+
+    .eng-foundation-content-txt h2 {
+        font-size: 1.4em;
+    }
+
+    .eng-foundation-content-txt p {
+        font-size: 1em;
+    }
+
+    .eng-foundation-info {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 350px) {
+    .eng-foundation-content-txt p {
+        font-size: .95em;
+    }
+}

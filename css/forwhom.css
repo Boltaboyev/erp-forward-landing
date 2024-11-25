@@ -1,0 +1,239 @@
+.for-whom {
+    padding: 30px 0;
+}
+
+.for-whom .section-header {
+    text-align: left;
+    font-weight: 700;
+}
+
+.for-whom-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.for-whom-content-cardbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    width: 55%;
+}
+
+.for-whom-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 30px;
+    background: #f8fafc;
+    border: 1px solid #eff2f7;
+    border-radius: 6px;
+}
+
+.for-whom-card .card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.for-whom-card .card-text h3 {
+    font-weight: 600;
+    font-size: 1.6em;
+    color: var(--primary-color);
+}
+
+.for-whom-card .card-text p {
+    font-weight: 400;
+    font-size: 1.1em;
+    line-height: 156%;
+    color: #8a90a5;
+}
+
+
+/* for-whom-registration */
+
+.for-whom-registration {
+    width: 40%;
+}
+
+.for-whom-registration form p {
+    font-weight: 500;
+    font-size: 1.3em;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.for-whom-registration form {
+    border-radius: 6px;
+    border: 1px solid #eff2f7;
+    padding: 50px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3), 0 8px 12px 6px rgba(0, 0, 0, 0.15);
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.for-whom-registration form input {
+    width: 100%;
+    border: 1px solid #eff2f7;
+    border-radius: 6px;
+    padding: 20px 16px;
+    background: #f8fafc;
+    outline: none;
+}
+
+.for-whom-registration form input:focus {
+    border-color: var(--secondary-color);
+}
+
+.for-whom-registration form button {
+    width: 100%;
+    border-radius: 6px;
+    padding: 20px 16px;
+    background: var(--primary-color);
+    outline: none;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 133%;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.for-whom-registration form button:hover {
+    background: #253568;
+}
+
+.for-whom-registration form button:active {
+    transform: scale(.98);
+    transition: .1s;
+}
+
+
+@media (max-width: 1195px) {
+    .for-whom-card {
+        padding: 20px;
+    }
+
+    .card-text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1120px) {
+    .for-whom-registration form {
+        padding: 30px;
+    }
+
+    .for-whom-card {
+        padding: 10px;
+    }
+
+    .card-text {
+        font-size: 13px;
+    }
+
+    .card-text h3 {
+        font-size: 1em;
+    }
+
+    .for-whom-card img {
+        height: 80px;
+    }
+}
+
+@media (max-width: 990px) {
+    .for-whom-registration form {
+        gap: 20px;
+    }
+
+    .for-whom-card {
+        gap: 10px;
+    }
+}
+
+
+
+@media (max-width: 895px) {
+    .for-whom-content {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .for-whom-content-cardbox {
+        width: 100%;
+    }
+
+    .for-whom-registration form {
+        padding: 50px;
+    }
+
+    .for-whom-card {
+        padding: 15px;
+    }
+
+    .for-whom-card img {
+        height: 100%;
+    }
+
+    .for-whom-registration {
+        width: 70%;
+    }
+}
+
+@media (max-width: 730px) {
+
+    .for-whom-registration form {
+        padding: 40px 20px;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .for-whom-registration {
+        width: 100%;
+    }
+
+    .for-whom-registration form {
+        padding: 40px 20px;
+    }
+
+    .for-whom-registration form input,
+    .for-whom-registration form button {
+        padding: 15px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .for-whom-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .for-whom-card img {
+        width: 70px;
+    }
+
+    .card-text h3 {
+        font-size: 1.3em !important;
+    }
+
+    .for-whom-registration form {
+        gap: 10px;
+    }
+
+    .for-whom-registration form p {
+        font-size: 16px;
+    }
+}
