@@ -28,7 +28,7 @@ const swiper2 = new Swiper(".mySwiper2", {
     },
 })
 
-// english foundation swiper
+// english foundation swiper -------
 const foundationswiper = new Swiper(".foundation-swiper", {
     pagination: {
         el: ".swiper-pagination",
